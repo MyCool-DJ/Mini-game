@@ -1,4 +1,3 @@
-
 #day17 of 100days-of-code via REplit
 from getpass import getpass as input
 
@@ -16,18 +15,22 @@ while True:
 
   if (player1 == "Rock" or player1 == "rock" or player1 == "🪨") and (player2 == "Paper" or player2 == "paper"):
     print("Player 2 wins!!")
-    player2_score += 1
-	#elif (player1 == "Rock" or player1 == "rock") and (player2 == "Rock" or player2 == "rock")
-	  #print("draw")
+    player2_score += 1 
+  elif (player1 == "Rock" or player1 == "rock") and (player2 == "Rock" or player2 == "rock"):
+    print("Rock - draw!")
 
   elif (player1 == "Paper" or player1 == "paper" or player1 == "📄") and (player2 == "Rock" or player2 == "rock" or player2 == "🪨"):
-    print("Player 1 wins!!")
+    print("Player 1 wins!!")	
     player1_score += 1
+  elif (player1 == "Paper" or player1 == "paper") and (player2 == "Paper" or player2 == "paper"):
+	  print("Paper - draw!")
 
   elif (player1 == "Rock" or player1 == "rock" or player1 == "🪨") and (player2 == "Scissors" or player2 == "scissors") or player2 == "✂️":
     print("Player 1 wins!")
     player1_score += 1 
-
+  elif (player1 == "Scissors" or player1 == "scissors") and (player2 == "Scissors" or player2 == "scissors"):
+	  print("Sicssors - draw!")
+		
   elif (player1 == "Scissors" or player1 == "scissors") and (player2 == "Rock" or player2 == "rock" or player2 == "🪨"):
     print("Player 2 wins!")
     player2_score += 1
